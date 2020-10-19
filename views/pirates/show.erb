@@ -6,10 +6,13 @@
     </div>
 
 <h2>Ships</h2>
-    <% @ships.each do |ship| %>
+<ul>
+    <% @pirate.ships.each_with_index do |ship, index| %>
+    <li><%= index + 1 %>.</li>
     <div class="ship">
-        <h4>Name: <%= ship.name %></h4>
-        <h4>Type: <%= ship.type %></h4>
-        <h4>Booty: <%= ship.booty %></h4>
+        <li>Name: <%= ship.name %></li>
+        <li>Type: <%= ship.type %></li>
+        <li>Booty: <%= ship.booty %></li>
     </div>
     <% end %>
+</ul>

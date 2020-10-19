@@ -1,25 +1,26 @@
 <form method="POST" action="/pirates">
     <h2>Pirate</h2>
-    <label>Pirate Name: </label>
-    <input type="text" name="pirate[name]"><br>
-    <label>Pirate Weight: </label>
-    <input type="text" name="pirate[weight]"><br>
-    <label>Pirate Height: </label>
-    <input type="text" name="pirate[height]"><br>
+    <label for="pirate_name">Pirate Name: </label>
+    <input type="text" id="pirate_name" name="pirate[name]"><br>
+    <label for="pirate_weight">Pirate Weight: </label>
+    <input type="text" id="pirate_weight" name="pirate[weight]"><br>
+    <label for="pirate_height">Pirate Height: </label>
+    <input type="text" id="pirate_height" name="pirate[height]"><br>
 
     <h2>Ship(s)</h2>
-    <label>Ship Name: </label> 
-    <input type="text" id="ship_name_1" name="pirate[ships][][name]"><br>
-    <label>Ship Type: </label> 
-    <input type="text" id="ship_type_1" name="pirate[ships][][type]"><br> 
-    <label>Ship Booty: </label> 
-    <input type="text" id="ship_booty_1" name="pirate[ships][][booty]"><br>
+    <label for="ship_name">Ship No. 1 Name: </label> 
+    <input type="text" name="pirate[ships][][name]"><br>
+    <label for="ship_type_1">Ship No. 1 Type: </label> 
+    <input type="text" name="pirate[ships][][type]"><br> 
+    <label for="ship_booty_1">Ship No. 1 Booty: </label> 
+    <input type="text" name="pirate[ships][][booty]"><br>
 
-    <label>Ship Name: </label> 
-    <input type="text" id="ship_name_2" name="pirate[ships][][name]"><br>
-    <label>Ship Type: </label> 
-    <input type="text" id="ship_type_2" name="pirate[ships][][type]"><br>
-    <label>Ship Booty: </label> 
-    <input type="text" id="ship_booty_2" name="pirate[ships][][booty]"><br>
+    <label for="ship_name">Ship No. 2 Name: </label> 
+    <input type="text" name="pirate[ships][][name]"><br>
+    <label>Ship No. 2 Type: </label> 
+    <input type="text" name="pirate[ships][][type]"><br>
+    <label>Ship No. 2 Booty: </label> 
+    <input type="text" name="pirate[ships][][booty]"><br>
+
     <button type="submit">Submit</button>
 </form>
