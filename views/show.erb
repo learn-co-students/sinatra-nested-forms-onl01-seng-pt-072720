@@ -1,0 +1,8 @@
+<p>Pirate Name: <%=@pirate.name%></p>
+<p>Pirate Info: <%=@pirate.name%> weighs in at <%=@pirate.weight%> and is <%=@pirate.height%> tall.</p>
+
+
+<% Ship.all.each do |ship| %>
+  <p>Ship Name: <%=ship.name%></p>
+  <p>The <%=ship.name%> is a <%=ship.type%> carrying <%=ship.booty%>.</p>
+  <% end %>
