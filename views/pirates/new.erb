@@ -8,21 +8,30 @@
     <input type="text" id="name" name="pirate[name]"><br>
     
     <label for="weight"> Pirate Weight:</label>
-    <input type="text" id="weight" name="pirate[weight]"><br>
+    <input type="integer" id="weight" name="pirate[weight]"><br>
 
     <label for="height"> Pirate Height:</label>
-    <input type="text" id="height" name="pirate[height]"><br>
+    <input type="integer" id="height" name="pirate[height]"><br>
 
-    <label for="name"> Ship Name:</label>
-    <input type="text" id="name" name="pirate[ships][][name]"><br>  
+    <p><label for="name"> First Ship's Name:</label></p>
+    <input type="text" id="ship_name_1" name="pirate[ships][][name]"><br>  
 
     <label for="type"> Ship Type:</label>
-    <input type="text" id="type" name="pirate[ships][][type]"><br>  
+    <input type="text" id="ship_type_1" name="pirate[ships][][type]"><br>  
 
     <label for="booty"> Ship Booty:</label> 
-    <input type="text" id="booty" name="pirate[ships][][booty]"><br>  
+    <input type="text" id="ship_booty_1" name="pirate[ships][][booty]"><br>  
 
-    <input type="submit">
+    <label for="name"> Second Ship's Name:</label>
+    <input type="text" id="ship_name_2" name="pirate[ships][][name]"><br>  
+
+    <label for="type"> Ship Type:</label>
+    <input type="text" id="ship_type_2" name="pirate[ships][][type]"><br>  
+
+    <label for="booty"> Ship Booty:</label> 
+    <input type="text" id="ship_booty_2" name="pirate[ships][][booty]"><br>  
+
+    <input type="submit" value="Submit">
 </form>
 
 </html>
