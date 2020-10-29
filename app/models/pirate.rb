@@ -10,6 +10,9 @@ class Pirate
         @@all << self
     end
 
+    binding.pry
+
+
     def self.all
         @@all
     end
